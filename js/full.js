@@ -103,7 +103,40 @@ $(function(){
   });
 })
 
+
+
+
 // 스크롤 이벤트
+$(function(){
+  window.addEventListener("wheel", function(e){
+    e.preventDefault();
+},{passive : false});
+  if($(window).width() > 640) {
+    let mHtml = $("html");
+    let page = 1;
+    $(".logo").click(function(){page=1;})
+    $(window).on("wheel", function(e) {
+        if(mHtml.is(":animated")) return;
+        if(e.originalEvent.deltaY > 0) {
+            if(page == 9) return;
+            page++;
+        } else if(e.originalEvent.deltaY < 0) {
+            if(page == 1) return;
+            page--;
+        }
+        var posTop =(page-1) * $(window).height();
+        mHtml.animate({scrollTop : posTop},800);
+    })
+    } else {
+        $(window).on("wheel", function(e) {
+            if(e.originalEvent.deltaY > 0) {
+                e.preventDefault()
+            } else if(e.originalEvent.deltaY < 0) {
+                e.preventDefault()
+            }
+        })
+    }
+})
 /* $(function(){
   window.addEventListener("wheel", function(e){
     e.preventDefault();
