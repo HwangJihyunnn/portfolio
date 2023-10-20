@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JiHyunㅣPortfolio</title>
+  <link rel="icon" href="img/web-icon3.png">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fullPage.css">
+  <link rel="stylesheet" href="css/media-430.css" media="all and (min-width:420px) and (max-width: 1024px)">
+
+  <!-- aos효과 -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/full.js"></script>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <div class="logo">
+        <h1><a href="#"><img src="img/jihyun-logo.png" alt="홈바로가기"></a></h1>
+      </div>
+      <nav class="gnb">
+        <ul class="gnb-list">
+          <li><a href="#profile" class="menu2">Profile</a></li>
+          <li>
+            <a href="#contents" class="menu3">Contents</a>
+          </li>
+          <li><a href="#card-news" class="menu4">Card & News</a></li>
+        </ul>
+      </nav>
+      <div id="current_date">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+        <script>
+        // 원하는 로케일 설정
+        moment.locale('ko'); // 한국어
+        const formattedDate = moment().format('LL'); // 로케일화된 긴 형식으로 날짜 표시
+        document.getElementById("current_date").innerHTML = formattedDate;
+        </script>
+        <!-- Weather widget by https://meteodays.com -->
+        <a id="ms-informer-link-5abff4401843d974f336ef8314043108" class="ms-informer-link" href="https://meteodays.com/ko/weather/overview/seoul">서울날씨</a>
+        <script class="ms-informer-script" src="https://meteodays.com/ko/informer/script/5abff4401843d974f336ef8314043108"></script>
+      </div>
+      <div class="media1024">
+        <button><img src="img/mobile-hamburger.png" alt="모바일메뉴"></button>
+      </div>
+      <!--// 날씨정보와 일자정보 -->
+    </header>
+    <!-- //header -->
+    <div id="all-wrap">
+      <!-- 구름 이미지 애니메이션 -->
+      <img src="img/cloud1.png" alt="" class="cloud-1">
+      <img src="img/cloud2.png" alt="" class="cloud-2">
+      <img src="img/cloud1.png" alt="" class="cloud-3">
+      <img src="img/cloud2.png" alt="" class="cloud-4">
+    </div>
+    <!-- //구름 애니메이션 -->
+    <section id="main">
+      <div class="main-banner">
+        <div class="main-inner">
+          <span class="main-text"></span>
+          <span class="blink">&#124;</span>
+        </div>
+        <a href="#" class="main-scroll"><span></span><span></span><span></span>Scroll</a>
+      </div>
+    </section>
+    <!-- //main -->
+    <section id="profile">
+      <div class="profile-inner" >
+        <div id="profile-left" data-aos="fade-right" data-aos-duration="2000">
+          <div class="my" data-aos="flip-left" data-aos-duration="2000">
+            <img src="img/jihyun4.jpg" alt="프로필사진">
+              <h2>안녕하세요! 웹퍼블리셔 황지현입니다.</h2>
+              <p>사용자가 홈페이지를 신뢰할 수 있는 사이트를 만들어 가며, </p>
+              <p>불필요한 태그가 아닌, 의미있는 시맨틱 태그가 되어 같이 협업하여 함께 성장하고 싶습니다.</p>
+              <p>자기개발에 끝이 없는 것처럼 끝없이 성장하고 개발하겠습니다.</p>
+          </div>
+        </div>
+        <div id="profile-right" data-aos="fade-left" data-aos-duration="2000">
+          <div class="right-inner1">
+            <article class="about">
+              <span class="under">자기주도+습득력+센스 = "황지현"</span>
+              <br>
+            </article>
+            <div class="skill-box" data-aos="fade-up"
+            data-aos-duration="3000">
+              <article class="skill">
+                <h3>Skill</h3>
+                <ul class="tab-nav">
+                  <li class="active"><img src="img/html.png" alt="html"></li>
+                  <li><img src="img/css.png" alt="css"></li>
+                  <li><img src="img/js.png" alt="javascript"></li>
+                  <li><img src="img/git_06.png" alt="git"></li>
+                  <li><img src="img/boot.png" alt="boot"></li>
+                  <li><img src="img/sass.png" alt="sass"></li>
+                  <li><img src="img/react.png" alt="react"></li>
+                  <li><img src="img/firebase.png" alt="firebase"></li>
+                </ul>
+                <ul class="tab-contents">
+                  <li class="teb-con1 active">유효성 문제없이 HTML5의 웹표준과 웹접근성을 준수하고 크로스 브라우징이 가능합니다.</li>
+                  <li class="teb-con2">CSS3로 다양한 최신 트렌드 디자인과 애니메이션을 구성할 수 있습니다.</li>
+                  <li class="teb-con3">슬라이드, 메뉴, 탭메뉴 애니메이션 기능 등 최신 트렌드에 적용된 다양한 동적 기능을 자바스크립트로 구현하며 활용도 가능합니다.</li>
+                  <li class="teb-con4">git을 이용하여 프로젝트 관리가 가능합니다.</li>
+                  <li class="teb-con4">부트스트랩을 이용하여 빠르게 디자인을 구축할 수 있습니다.</li>
+                  <li class="teb-con4">sass를 이용하여 관리를 편리하게 할 수 있습니다.</li>
+                  <li class="teb-con4">리액트는 계속 배움중에 있으며 현재는 간단한 html문서를 껴넣을 수 있습니다.</li>
+                  <li class="teb-con5">이메일 로그인 / 글쓰기 / 글삭제 등을 관리할 수 있습니다.</li>
+                </ul>
+              </article>
+              <article class="skill">
+                <h3>Adobe</h3>
+                <ul class="tab-nav2">
+                  <li class="active"><img src="img/photoshop_01.png" alt="포토샵"></li>
+                  <li><img src="img/illustrator_02.png" alt="일러스트레이트"></li>
+                  <li><img src="img/xd.png" alt="xd"></li>
+                  <li><img src="img/folder.png" alt="기타 스킬"></li>
+                </ul>
+                <ul class="tab-contents2">
+                  <li class="teb-con6 active" >기본적인 이미지보정과 누끼, 합성 등 편집이 가능합니다.</li>
+                  <li class="teb-con7">심벌 로고같은 간단한 작업이 가능합니다. </li>
+                  <li class="teb-con8">XD로 가이드라인과 기획을 설계할 수 있습니다. </li>
+                  <li class="teb-con9">한글 / 워드 / 엑셀 / 파워포인트등을 활용하여 기획서, 보고서 작업을 능숙하게 할 수 있습니다. </li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- //profile -->
+    <div id="contents">
+      <div class="package">
+        <div class="big1"></div>
+        <section class="con">
+          <div class="con-inner right">
+            <div class="con-img" data-aos="fade-right" data-aos-duration="2000">
+              <p class="mokup"><img src="img/OKA-VALLEY-web.png" alt="오크밸리"></p>
+            </div>
+            <div class="con-text" data-aos="fade-left" data-aos-duration="2000">
+              <!-- <p class="con-banner"><img src="img/oka-logo.png" alt="오크밸리배너" ></p> -->
+              <h3><span class="under">OAK VALLEY ㅣ 오크밸리</span></h3>
+              <div class="tool">
+                <div class="tool-icon">
+                  <ul>
+                    <li><p><img src="img/html.png" alt="HTML 5"></p></li>
+                    <li><p><img src="img/css.png" alt="CSS 3" style="filter: invert(10%);"></p></li>
+                    <li><p><img src="img/photoshop_01.png" alt="Photoshop"></p></li>
+                    <li><p><img src="img/js.png" alt="javascript"></p></li>
+                    <li><p><img src="img/git_06.png" alt="git"></p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="con-page">
+                <ul>
+                  <li>
+                    <p class="page">페이지설계 :<span> 반응형 Main + Sub*3(소개/다이닝/객실)</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">제작기간 :<span> 40시간 퍼블리싱 100%</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">웹 크기 :<span> max-width: 1800px</span></p>
+                    <p class="page">태블릿 크기 :<span> max-width: 1024px</span></p>
+                  </li>
+                  <li>
+                    <p class="page">프로젝트 개요 :</p>
+                    <span>오크밸리 사이트를 클론 코딩하면서 자바스크립트와 제이쿼리라이브러리를 활용한 포트폴리오 사이트를 구현해보았습니다. 메인의 슬라이드 기능은 플러그인을 사용하지않고 직접 구현하였으며, 스크립트로 구현할 수 있는 부분은 최대한 직접 만들어보았습니다.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="Detail">
+                <button class="btn web"><a href="https://hwangjihyunnn.github.io/OKA-VALLEY/" target="_blank">페이지 이동</a></button>
+                <button class="btn web"><a href="https://github.com/HwangJihyunnn/OKA-VALLEY" target="_blank">Code view</a></button>
+              </div>
+            </div>
+            <!-- //con-text -->
+          </div>
+        </section>
+      </div>
+      <div class="package">
+        <div class="big2"></div>
+        <section class="con">
+          <div class="con-inner right">
+            <div class="con-img-center" data-aos="fade-right" data-aos-duration="2000">
+              <p class="mokup"><img src="img/center.png" alt="center"></p>
+            </div>
+            <div class="con-text" data-aos="fade-left" data-aos-duration="2000">
+              <!-- <p class="con-banner"><img src="img/oka-logo.png" alt="오크밸리배너" ></p> -->
+              <h3><span class="under">Center ㅣ 세상의 중심, 센터</span></h3>
+              <div class="tool">
+                <div class="tool-icon">
+                  <ul>
+                    <li><p><img src="img/html.png" alt="HTML 5"></p></li>
+                    <li><p><img src="img/css.png" alt="CSS 3" style="filter: invert(10%);"></p></li>
+                    <li><p><img src="img/photoshop_01.png" alt="Photoshop"></p></li>
+                    <li><p><img src="img/js.png" alt="javascript"></p></li>
+                    <li><p><img src="img/firebase.png" alt="firebase"></p></li>
+                    <li><p><img src="img/api.png" alt="api"></p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="con-page">
+                <ul>
+                  <li>
+                    <p class="page">페이지설계 :<span> 모바일 Main + Sub*3 + 카카오로그인 + 글쓰기 및 삭제 수정 </span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="page">제작기간 :<span> 5일 4명 / 퍼블리싱 25%</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">모바일 크기 :<span> max-width: 430px</span></p>
+                    <!-- <p class="page">태블릿 크기 :<span> max-width: 1024px</span></p> -->
+                  </li>
+                  <li>
+                    <p class="page">프로젝트 개요 :</p>
+                    <span>파이어베이스를 활용하여 이메일 로그인 구현과 게시글 삭제 및 수정 업로드를 하였으며 또한 카카오 api를 이용하여 카카오 로그인까지 구현하였습니다. 익숙치 않은 플러그인이였지만, 미처 몰랐던 부분이나 놓쳤던 부분도 챙기고 배우면서 기능적인 부분뿐만 아니라 의사소통 하는 법을 배우고 조금 더 성장하는 계기가 되었습니다. </span>
+                    <br>
+                    <p class="text-red" style="color: red; font-size: 14px; margin-top: 10px;">본 화면은 모바일 430px크기에 최적화 되어있습니다.</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="Detail">
+                <button class="btn web"><a href="https://centert-3ae9f.web.app/" target="_blank">페이지 이동</a></button>
+                <!-- <button class="btn web"><a href="https://centert-3ae9f.web.app/" target="_blank">Code view</a></button> -->
+              </div>
+            </div>
+            <!-- //con-text -->
+          </div>
+        </section>
+      </div>
+      <div class="package">
+        <div class="big3"></div>
+        <section class="con">
+          <div class="con-inner">
+            <div class="con-img"  data-aos="fade-right" data-aos-duration="2000">
+              <p><img src="img/OhKitchen-web.png" alt="오키친"></p>
+            </div>
+            <div class="con-text" data-aos="fade-left" data-aos-duration="2000">
+              <!-- <p class="con-banner"><img src="img/ohkit-logo.png" alt="오키친" ></p> -->
+              <h3><span class="under">Oh KitChen ㅣ 오키친</span></h3>
+              <div class="tool">
+                <div class="tool-icon">
+                  <ul>
+                    <li><p><img src="img/html.png" alt="HTML 5"></p></li>
+                    <li><p><img src="img/css.png" alt="CSS 3" style="filter: invert(10%);"></p></li>
+                    <li><p><img src="img/photoshop_01.png" alt="Photoshop"></p></li>
+                    <li><p><img src="img/js.png" alt="javascript"></p></li>
+                    <li><p><img src="img/git_06.png" alt="git"></p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="con-page">
+                <ul>
+                  <li>
+                    <p class="page">페이지설계 :<span> Web 100% Main + Sub*3(인기레시피/신규레시피/계량팁)</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">제작기간 :<span> 1주 퍼블리싱 100%</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">웹 크기 :<span> max-width: 1800px</span></p>
+                    <!-- <p class="page">태블릿 크기 :<span> max-width: 1024px</span></p> -->
+                  </li>
+                  <li>
+                    <p class="page">프로젝트 개요 :</p>
+                    <span>html/css 기본을 다져보고자 만들어본 프로젝트였습니다. 자바스크립트 기능보다는 전체 구조와 css를 다져보는데 집중해서 만들었습니다. 기능적인 요소보다는 구조를 이해하고 css를 응용해볼 수 있는 프로젝트였습니다. </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="Detail">
+                <button class="btn web"><a href="https://hwangjihyunnn.github.io/Oh-KitChen/" target="_blank">페이지 이동</a></button>
+                <button class="btn web"><a href="https://github.com/HwangJihyunnn/Oh-KitChen/" target="_blank">Code view</a></button>
+              </div>
+            </div>
+            <!-- //con-text -->
+          </div>
+        </section>
+      </div>
+      <div class="package">
+        <div class="big4"></div>
+        <section class="con">
+          <div class="con-inner right">
+            <div class="con-img" data-aos="fade-right" data-aos-duration="2000">
+              <p><img src="img/sulwhasoo.png" alt="설화수"></p>
+            </div>
+            <div class="con-text" data-aos="fade-left" data-aos-duration="2000">
+              <!-- <p class="con-banner"><img src="img/sulwhsoo-logo.png" alt="오크밸리배너" ></p> -->
+              <h3><span class="under">sulwhasoo ㅣ 설화수</span></h3>
+              <div class="tool">
+                <div class="tool-icon">
+                  <ul>
+                    <li><p><img src="img/html.png" alt="HTML 5"></p></li>
+                    <li><p><img src="img/css.png" alt="CSS 3" style="filter: invert(10%);"></p></li>
+                    <li><p><img src="img/photoshop_01.png" alt="Photoshop"></p></li>
+                    <li><p><img src="img/js.png" alt="javascript"></p></li>
+                    <li><p><img src="img/git_06.png" alt="git"></p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="con-page">
+                <ul>
+                  <li>
+                    <p class="page">페이지설계 :<span> Web 100% Main</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">제작기간 :<span> 3일 퍼블리싱 100%</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">웹 크기 :<span> max-width: 1800px</span></p>
+                    <!-- <p class="page">태블릿 크기 :<span>max-width: 1024px</span></p> -->
+                  </li>
+                  <li>
+                    <p class="page">프로젝트 개요 :</p>
+                    <span>다양한 연령층을 가지고 있는 화장품 회사 중 설화수 홈페이지를 골라서 해보았습니다. 플러그인을 이용하여 슬라이드를 구현하였습니다. 접근성이 좋게 클론코딩을 하였습니다.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="Detail">
+                <button class="btn web"><a href=" https://hwangjihyunnn.github.io/sulwhasoo/" target="_blank">페이지 이동</a></button>
+                <button class="btn web"><a href="https://github.com/HwangJihyunnn/sulwhasoo/" target="_blank">Code view</a></button>
+              </div>
+            </div>
+            <!-- //con-text -->
+          </div>
+        </section>
+      </div>
+      <div class="package">
+        <div class="big5"></div>
+        <section class="con">
+          <div class="con-inner">
+            <div class="con-img" data-aos="fade-right" data-aos-duration="2000">
+              <p><img src="img/richmond.png" alt="리치먼트"></p>
+            </div>
+            <div class="con-text" data-aos="fade-left" data-aos-duration="2000">
+              <!-- <p class="con-banner"><img src="img/richmond-logo.png" alt="오크밸리배너" ></p> -->
+              <h3><span class="under">richmond ㅣ 리치먼드 평창</span></h3>
+              <div class="tool">
+                <div class="tool-icon">
+                  <ul>
+                    <li><p><img src="img/html.png" alt="HTML 5"></p></li>
+                    <li><p><img src="img/css.png" alt="CSS 3" style="filter: invert(10%);"></p></li>
+                    <li><p><img src="img/photoshop_01.png" alt="Photoshop"></p></li>
+                    <li><p><img src="img/js.png" alt="javascript"></p></li>
+                    <li><p><img src="img/git_06.png" alt="git"></p></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="con-page">
+                <ul>
+                  <li>
+                    <p class="page">페이지설계 :<span> Web 100% Main </span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">제작기간 :<span> 8시간 퍼블리싱 100%</span></p>
+                    
+                  </li>
+                  <li>
+                    <p class="page">웹 크기 :<span> max-width: 1800px</span></p>
+                    <!-- <p class="page">태블릿 크기 :<span>max-width: 1024px</span></p> -->
+                  </li>
+                  <li>
+                    <p class="page">프로젝트 개요 :</p>
+                    <span>리치먼드평창 사이트는 웹사이트으 퍼블리싱 기능도 중요하지만 이미지로 인해 사이트에 더욱 생동감과 분위기를 살릴 수 있는 부분이 많았습니다. 특히 자바스크립트 기능없이도 마우스의 이벤트에 사용성을 더욱 보여줄 수 있어서 정적이지 않아 지루함이 없어서 구현해보았습니다.</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="Detail">
+                <button class="btn web"><a href=" https://hwangjihyunnn.github.io/richmond/" target="_blank">페이지 이동</a></button>
+                <button class="btn web"><a href="https://github.com/HwangJihyunnn/richmond/" target="_blank">Code view</a></button>
+              </div>
+            </div>
+            <!-- //con-text -->
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //contents -->
+    <div id="card-news">
+      <section class="card">
+        <ul>
+          <li>
+            <img src="img/photoshop/card2.png" alt="카드뉴스">
+            <p><span>이벤트<br>팝업</span></p>
+          </li>
+          <li>
+            <img src="img/photoshop/card3.png" alt="카드뉴스">
+            <p><span>포스터</span></p>
+          </li>
+          <li>
+            <img src="img/photoshop/card4.png" alt="이벤트팝업">
+            <p><span>메일링<br>포스터</span></p>
+          </li>
+          <li>
+            <img src="img/photoshop/card5.png" alt="카드뉴스">
+            <p><span>여행지<br>포스터</span></p>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <img src="img/photoshop/card6.png" alt="카드뉴스">
+            <p><span>포스터</span></p>
+          </li>
+          <li>
+            <img src="img/photoshop/card7.png" alt="카드뉴스">
+            <p><span>이벤트<br>팝업</span></p>
+          </li>
+          <li>
+            <img src="img/photoshop/card8.png" alt="카드뉴스">
+            <p><span>여행지<br>포스터</span></p>
+          </li>
+          <li>
+            <img src="img/photoshop/card9.png" alt="카드뉴스">
+            <p><span>포스터</span></p>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <!-- //card-news -->
+    
+    <div class="QA-inner">
+      <div class="QA">
+        <button class="qa-btn"><img src="img/message2.png" alt="문의"></button>
+      </div>
+      <div class="form">
+        <div class="form-list">
+          <img src="img/close.png" alt="닫기" class="close">
+          <form
+          action="https://formspree.io/f/xdoreepd"
+          method="POST">
+          <label>
+            Your Email:
+          <input type="email" name="email">
+          </label>
+          <label>
+            Message: <span>입력칸을 자유롭게 늘려보세요.</span>
+            <textarea name="message"></textarea>
+          </label>
+          <button type="submit">Send</button>
+        </form>
+        </div>
+      </div>
+    </div>
+    <!-- //QA-inner -->
+    <footer>
+      <div class="f-logo">
+        <a href="#"><img src="img/jihyun-logo.png" alt="홈화면바로가기"></a>
+      </div>
+      <div class="f-text">
+        <p class="bold">저의 포트폴리오를 방문해주셔서 감사합니다.</p>
+        <p>이 포트폴리오는 100% 저의 창작물입니다.</p>
+        <p>2023 &copy; Hwang Ji Hyun. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+  <!-- //wrap -->
+
+
+
+  <script>
+    AOS.init();
+  </script>
+  
+  <script>
+    (function(){var w=window;if(w.ChannelIO){return w.console.error("ChannelIO script included twice.");}var ch=function(){ch.c(arguments);};ch.q=[];ch.c=function(args){ch.q.push(args);};w.ChannelIO=ch;function l(){if(w.ChannelIOInitialized){return;}w.ChannelIOInitialized=true;var s=document.createElement("script");s.type="text/javascript";s.async=true;s.src="https://cdn.channel.io/plugin/ch-plugin-web.js";var x=document.getElementsByTagName("script")[0];if(x.parentNode){x.parentNode.insertBefore(s,x);}}if(document.readyState==="complete"){l();}else{w.addEventListener("DOMContentLoaded",l);w.addEventListener("load",l);}})();
+  
+    ChannelIO('boot', {
+      "pluginKey": "7e0ffa7e-afc0-4aa3-83ef-2201495fc6ea"
+    });
+  </script>
+</body>
+</html>

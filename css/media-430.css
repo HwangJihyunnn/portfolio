@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body{overflow-x: hidden;}
+#wrap { max-width: 1024px;}
+#main{max-width: 1024px;}
+header { max-width: 1024px; }
+.media1024 {display: block; max-width: 1024px; filter: invert(100%); position: absolute; top: 20px; right: 50px;}
+.media1024 button {border: none; background: none;}
+.media1024 img {max-width: 40px;}
+
+.logo {width: 150px; }
+.gnb-list{display: none;}
+#current_date {display: none;}
+
+.main-text {font-size: 26px;}
+
+#profile {max-width: 1024px; height: 100vh;}
+.profile-inner {display: block; height: 100%;}
+.con-text h3>.under {font-size: 20px;}
+
+#contents {max-width: 1024px;}
+.package {max-width: 1024px;}
+footer {max-width: 1024px;}
+#card-news {max-width: 1024px; height: 100vh; padding-top: 0}
+#card-news ul li {display: block; width: 200px; height: 200px;}
+.con {display: block;}
+.con-img{display: none; background: none;}
+.tool-icon>ul>li img {width: 40px;}
+.con-text>.con-page ul p {font-size: 18px;}
+.con-page .page span {font-size: 16px;}
+.con-text .Detail> button {width: 100px;}
+.btn a {margin: 25px 0; font-size: 16px;}
