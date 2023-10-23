@@ -1,6 +1,6 @@
-$(function(){
-  alert('본 화면은 1920px에 최적화 되어있습니다. 양해 부탁드립니다.')
-})
+// $(function(){
+//   alert('본 화면은 1920px에 최적화 되어있습니다.')
+// })
 
 
 
@@ -55,7 +55,7 @@ $(function(){
     // console.log(WIDTH);
     // console.log(HEIGHT);
 
-    for (let i = 1; i <= 5; i++) {
+    for (let i = 1; i <= 6; i++) {
       const target = `.package>.big${i}`;
       if ((i + 1) * HEIGHT === this.window.scrollY) {
         $(target).addClass("on");
@@ -123,7 +123,7 @@ $(function(){
     $(window).on("wheel", function(e) {
         if(mHtml.is(":animated")) return;
         if(e.originalEvent.deltaY > 0) {
-            if(page == 8.5) return;
+            if(page == 10) return;
             page++;
         } else if(e.originalEvent.deltaY < 0) {
             if(page == 1) return;
