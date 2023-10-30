@@ -1,6 +1,6 @@
-/* $(function(){
+$(function(){
   alert('본 화면은 1920px에 최적화 되어있습니다.')
-}) */
+})
 
 // main - 메인 텍스트 입력
 $(function(){
