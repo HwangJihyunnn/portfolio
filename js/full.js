@@ -1,13 +1,11 @@
-// $(function(){
-//   alert('본 화면은 1920px에 최적화 되어있습니다.')
-// })
-
-
+$(function(){
+  alert('본 화면은 1920px에 최적화 되어있습니다.')
+})
 
 // main - 메인 텍스트 입력
 $(function(){
 
-  const content = "2023 Ji Hyun Portfolio"
+  const content = "2024 Ji Hyun Portfolio"
   const text = document.querySelector(".main-text");
   let i = 0;
   
@@ -22,29 +20,31 @@ $(function(){
   setInterval(typing,300);
 })
 
-//슬라이드 메뉴
-/* $(function(){
-  $(".gnb-list>li:nth-child(2)").mouseover(function(){
-    $(".sub>li").stop().slideDown(500)
-  });
-  $(".gnb-list>li").mouseout(function(){
-    $(".sub>li").stop().slideUp(500)
-  });
-}) */
-
 /* content - 이미지 목업 */
-$(function(){
-  let t =0;
-  function contents(){
-    if(t<4){
+$(function () {
+  const NUM_IMAGES = 6;
+  const heights = [];
+
+  for (let i = 1; i <= NUM_IMAGES; i++) {
+    heights[i] = document.querySelector(`.img${i}`).offsetHeight;
+    let t = 0;
+    function animateImage() {
       t++;
-    }else {
-      t=0;
+      let move = t * 360;
+
+      if (move > heights[i]-360) {
+        move = heights[i] - 360;
+        t = -1;
+      }
+      $(`.con-img > p > .img${i}`).animate({ top: -move + "px" });
     }
-    $(".con-img >p>img").animate({top: -370 * t + "px"},{height: 100 + "%"})
+
+    setInterval(animateImage, 2000);
   }
-  setInterval(contents,2000)
-})
+});
+
+
+
 // contents - 홈페이지 bg
 $(function(){
   const WIDTH = window.innerWidth;
@@ -97,7 +97,6 @@ $(function(){
   })
 })
 
-
 // 문의하기 모달창
 $(function(){
   $(".qa-btn").click(function(){
@@ -107,8 +106,6 @@ $(function(){
     $(".form-list").fadeOut();
   });
 })
-
-
 
 
 // 스크롤 이벤트
@@ -142,33 +139,4 @@ $(function(){
         })
     }
 })
-/* $(function(){
-  window.addEventListener("wheel", function(e){
-    e.preventDefault();
-},{passive : false});
-  if($(window).width() > 640) {
-    let mHtml = $("html");
-    let page = 1;
-    $(window).on("wheel", function(e) {
-        if(mHtml.is(":animated")) return;
-        if(e.originalEvent.deltaY > 0) {
-            if(page == 9) return;
-            page++;
-        } else if(e.originalEvent.deltaY < 0) {
-            if(page == 1) return;
-            page--;
-        }
-        var posTop =(page-1) * $(window).height();
-        mHtml.animate({scrollTop : posTop},800);
-    })
-    } else {
-        $(window).on("wheel", function(e) {
-            if(e.originalEvent.deltaY > 0) {
-                e.preventDefault()
-            } else if(e.originalEvent.deltaY < 0) {
-                e.preventDefault()
-            }
-        })
-    }
-}) */
 

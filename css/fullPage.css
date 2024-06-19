@@ -78,16 +78,13 @@ header {position: fixed; display: flex; justify-content:space-between; align-ite
 .logo a{width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;filter:invert(100%)}
 .gnb {display: flex; align-items: center; justify-content: center;}
 .gnb-list {display: flex;  justify-content: flex-end;}
-.gnb-list>li {border-top: 2px solid #fff; border-bottom: 2px solid rgba(255,255,255,0.5); text-align: center; position: relative; z-index: 998; }
-.gnb-list>li a{display: inline-block;  text-align: center; font-size: 26px; overflow: hidden;  padding: 10px 40px; line-height: 1.5;}
+.gnb-list>li {border-top: 2px solid #fff; border-bottom: 2px solid rgba(255,255,255,0.5); text-align: center; position: relative; z-index: 998; width: 300px; }
+.gnb-list>li a{display: inline-block;  text-align: center; font-size: 26px; overflow: hidden;  line-height: 1.5; padding: 10px 0;}
 .gnb-list>li>a::after {display: block; content: '';  transform: scaleX(0); transition: transform 250ms ease-in-out;position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background:#F6B820;}
 .gnb-list>li>a:hover::after{transform: scaleX(1); }
-.gnb-list >li>.sub {position: absolute; top: 66px; display: flex; flex-direction: column; width: 100%; box-shadow: 1px 2px 5px #585858;}
-.gnb-list >li> .sub>li{font-size:0; display: none;}
-.gnb-list >li> .sub>li>a{display: block; color: #333; font-size: 18px; width: 100%; padding: 10px 20px; background: rgba(0,0,0,0.3); transition: all 0.2s; color: #fff;}
 
 /* menu List */
-.menu2, .menu3, .menu4 {border-top: 3px solid #F6B820; margin-top: -3px;}
+.gnb-list>li{border-top: 3px solid #F6B820; margin-top: -3px;}
 
 /* 스크롤 애니메이션 */
 .main-scroll {position: absolute; bottom: 20px; left: 50%; padding-top: 60px; color: #fff;}
@@ -138,7 +135,7 @@ border: 1px solid #fff; border-radius: 100%; box-sizing: border-box;
 #profile-left .my {width: 70%; margin: 0 auto;}
 #profile-left .my img{display: flex; justify-content: center; align-items: center; width: 400px; filter: brightness(1.1); border-radius: 30px;border: 1px solid #fff; box-shadow: 1px 2px 3px; }
 #profile-left h2 {font-size: 24px; font-weight: 500; margin-top: 20px;}
-#profile-right {width: 50%; display: flex; justify-content: space-around; color:#000; text-align: center;}
+#profile-right {display: flex; justify-content: space-around; color:#000; text-align: center;}
 .right-inner1 {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .skill-box {display: flex; }
 .skill-box > .skill {margin-right: 50px;}
@@ -163,7 +160,7 @@ border: 1px solid #fff; border-radius: 100%; box-sizing: border-box;
 #contents {width: 100%; height: 600vh; display: block;}
 .package {width: 100%; height: 100vh; position: relative; overflow: hidden;}
 .con {position: relative; z-index: 100;display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%; height: 100vh; padding-top: 100px; }
-.con-inner {display: flex; justify-content: center; align-items: center; width: 100%; height: 750px; font-family: 'GmarketSans';margin: 0 auto; color: #000; background: rgba(255, 255, 255, 0.9);}
+.con-inner {display: flex; justify-content: center; align-items: center; width: 100%; height: 750px; font-family: 'GmarketSans';margin: 0 auto; color: #000;}
 .con-inner.right {display: flex; flex-direction: row-reverse;}
 .package>.big1,.big2,.big3, .big4, .big5, .big6 { position: absolute; top: 0%; left: 0%;width: 0; height: 100vh;z-index: 99;transition: 1s ease-in-out;}
 /* .package> { position: absolute; top: 0%; right: 0%;width: 0; height: 100vh;z-index: 99;transition: 1s ease-in-out;} */
@@ -175,17 +172,17 @@ border: 1px solid #fff; border-radius: 100%; box-sizing: border-box;
 .package .big6 {background: url(../img/richmond-bg-lite.png)no-repeat center/cover fixed;}
 .package .on {width: 100%;}
 /* content 목업 */
-.con-img {width: 900px; height: 100%; overflow: hidden;position: relative;background: url(../img/iMac-2012-big.png)no-repeat center; background-size: 80%;}
+.con-img {width: 900px; height: 100%; overflow: hidden;position: relative; background: url(../img/iMac-2012-big.png)no-repeat center; background-size: 80%;}
 
 
 
 .con-img-center {background: url(../img/phoneMokup.png)no-repeat center;width: 900px; height: 100vh; overflow: hidden;position: relative;background-size: 40%;}
 .con-img-center>p{width: 310px; height: 588px; position: absolute; top: 183px; right: 295px; overflow: hidden; display: flex; justify-content: center; align-items: center;border-radius: 15px;overflow-y: scroll;}
-.con-img-center>p>img {position: absolute; top: 0; left:0; transition: 1s ease-in-out; width: 330px; overflow-y: hidden; border-radius: 45px;  }
-.con-img >p {width: 900px; height: 360px; position: absolute; top: 120px; left: 127px; overflow: hidden;}
+.con-img-center>p>img {position: absolute; top: 0; left:0; transition: 1s ease-in-out; width: 330px; overflow-y: hidden; border-radius: 45px;}
+.con-img >p {width: 900px; height: 360px; position: absolute; top: 120px; left: 127px; overflow: hidden;  }
 .con-img >p>img{position: absolute; top: 0; left:0; transition: 1s ease-in-out; width: 650px; overflow-y: hidden; }
 .con-img-center>p::-webkit-scrollbar {width: 0; }
-.con-text {width: 700px; padding: 30px; border-radius: 50px;position: relative; font-family: "Noto Sans KR"; }
+.con-text {width: 700px; padding: 30px; border-radius: 50px;position: relative; font-family: "Noto Sans KR"; background: rgba(255, 255, 255, 0.9); }
 .con-text h3 {font-size: 50px; font-weight: 700; margin-bottom: 20px; }
 .con-text h3>.under {background: linear-gradient(to top, #ffc352 50%, transparent 50%);}
 .con-text .Detail> button a{font-size: 18px;}
@@ -213,10 +210,10 @@ border: 1px solid #fff; border-radius: 100%; box-sizing: border-box;
 
 
 /* card-news */
-#card-news {width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; padding-top: 150px; margin-bottom: 30px;}
-.card {display: flex; flex-direction: column;}
+#card-news {width: 100%; height: 120vh; display: flex; justify-content: center; padding-top: 150px; }
+.card {display: flex; flex-direction: column; height: 100%;}
 #card-news ul {display: flex; justify-content: space-between; width: 100%;}
-#card-news li {width: 400px; height: 400px; cursor: pointer;overflow: hidden; margin: 10px; position: relative;}
+#card-news li {width: 300px; height: 300px; cursor: pointer;overflow: hidden; margin: 10px; position: relative;}
 #card-news li p { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none; background: rgba(0,0,0,0.7); display: none; }
 #card-news li p > span { font-size: 32px; text-align: center;  color: #fff; display: flex; justify-content: center; align-items: center; height: 100%;}
 #card-news li:hover p{display: block;}
