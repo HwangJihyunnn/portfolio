@@ -3,7 +3,7 @@
 
 @import url('https://webfontworld.github.io/gmarket/GmarketSans.css');
 
-body {color: #333; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; scroll-behavior: smooth; overflow-x: hidden;background: url(../img/main4.jpg)no-repeat center/cover fixed; }
+body {color: #333; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-box; scroll-behavior: smooth; overflow-x: hidden;background: url(../img/main-bg0.jpg)no-repeat center/cover fixed; }
 #wrap {position: relative; top: 0; width: 100%; height: 100vh; transition: all 0.5s;}
 
 
@@ -72,19 +72,19 @@ body {color: #333; font-family: 'Noto Sans KR', sans-serif; box-sizing: border-b
   }
 }
 /* header */
-header {position: fixed; display: flex; justify-content:space-between; align-items: center; font-family: 'Roboto'; color: #fff; width: 100%;  backdrop-filter: blur(10px);  z-index: 999; padding: 0 30px;}
+header {position: fixed; display: flex; justify-content:space-between; align-items: center; font-family: 'Roboto'; color: #333; width: 100%;  backdrop-filter: blur(10px);  z-index: 999; padding: 0 30px;}
 .media1024 {display: none;}
 .logo {width: 200px; }
 .logo a{width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;filter:invert(100%)}
 .gnb {display: flex; align-items: center; justify-content: center;}
 .gnb-list {display: flex;  justify-content: flex-end;}
-.gnb-list>li {border-top: 2px solid #fff; border-bottom: 2px solid rgba(255,255,255,0.5); text-align: center; position: relative; z-index: 998; width: 300px; }
+.gnb-list>li {border-top: 2px solid #fff; border-bottom: 2px solid #fff; text-align: center; position: relative; z-index: 998; width: 300px; }
 .gnb-list>li a{display: inline-block;  text-align: center; font-size: 26px; overflow: hidden;  line-height: 1.5; padding: 10px 0;}
-.gnb-list>li>a::after {display: block; content: '';  transform: scaleX(0); transition: transform 250ms ease-in-out;position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background:#F6B820;}
+.gnb-list>li>a::after {display: block; content: '';  transform: scaleX(0); transition: transform 250ms ease-in-out;position: absolute; bottom: -2px; left: 0; width: 100%; height: 3px; background:#333;}
 .gnb-list>li>a:hover::after{transform: scaleX(1); }
 
 /* menu List */
-.gnb-list>li{border-top: 3px solid #F6B820; margin-top: -3px;}
+.gnb-list>li{border-top: 3px solid #333; margin-top: -3px;}
 
 /* 스크롤 애니메이션 */
 .main-scroll {position: absolute; bottom: 20px; left: 50%; padding-top: 60px; color: #fff;}
@@ -127,24 +127,29 @@ border: 1px solid #fff; border-radius: 100%; box-sizing: border-box;
 }
 /* profile */
 .about {text-align: center;}
-.about .under {text-decoration: underline 5px;text-decoration-style: wavy; text-decoration-color:#F6B820 ; font-size: 60px; text-underline-position : under;font-weight: 500; margin-top: 50px; } 
+.about .under {text-decoration: underline 2px;text-decoration-style: wavy; text-decoration-color:#F6B820 ; font-size: 24px; text-underline-position : under; margin-top: 50px; } 
 .about > p, .about > span {line-height: 1.2; font-size: 20px; margin-top: 30px; }
-#profile {  max-width: 100%; height: 100vh; color: #333; padding-top: 150px;}
-.profile-inner {max-width: 100%; height: 700px;margin:0 auto; display: flex; justify-content: space-around; align-items: center; position: relative; color: #000; background: rgba(255, 255, 255, 0.9);}
-#profile-left {border-right:1px solid #ccc; margin-top: 20px; }
-#profile-left .my {width: 70%; margin: 0 auto;}
-#profile-left .my img{display: flex; justify-content: center; align-items: center; width: 400px; filter: brightness(1.1); border-radius: 30px;border: 1px solid #fff; box-shadow: 1px 2px 3px; }
-#profile-left h2 {font-size: 24px; font-weight: 500; margin-top: 20px;}
+#profile {  max-width: 100%;  color: #333; padding-top: 150px;}
+.profile-inner {max-width: 100%;margin:0 auto; display: flex; flex-direction: column; justify-content: space-around; align-items: center; position: relative; color: #000; }
+/* #profile-left .my img{display: flex; align-items: center; width: 300px; border-radius: 30px; } */
+.my {display: flex;}
+#profile-left h2 {font-size: 32px; font-weight: 500; margin-top: 20px;}
+.my-text {text-align: center;}
 #profile-right {display: flex; justify-content: space-around; color:#000; text-align: center;}
-.right-inner1 {display: flex; flex-direction: column; align-items: center; justify-content: center;}
-.skill-box {display: flex; }
-.skill-box > .skill {margin-right: 50px;}
-#profile-right article {margin: 30px;color:#000;}
+.right-inner1 {display: flex; align-items: center; justify-content: center;}
+.skill-box {display: flex; gap: 30px; margin: 50px 0; }
+/* .skill-box > .skill {margin-right: 50px;} */
+/* #profile-right article {margin: 30px;color:#000;} */
 #profile-right article h3 {position: relative; font-size: 26px; font-weight: 700; margin-bottom: 20px; color:#000}
-/* #profile-right article h3::before { position: absolute; top: 8px; left: -20px; content: ''; width: 5px; height: 17px;  background: #000;} */
+.git-blog {display: flex; gap: 30px; margin-top: 150px; justify-content: space-around; text-align: center;}
+.git-blog .bbbox {
+  background: rgba(255, 255, 255, 0.5);padding: 50px;border-radius: 20px; display: inline-block; color: #072150; text-align: center; color: #333;
+}
+.git-blog > div > a {display: block; padding: 30px 0;}
+.blog > h3, .git > h3 {font-weight: 700; font-size: 26px; margin-bottom: 20px;}
 
-.skill {width: 500px; color: #000;}
-.skill>.tab-nav,.tab-nav2 {display: flex;  width: 100%;background: #F6B820; border-radius: 20px 20px 0 0;}
+.skill {width: 500px;}
+.skill>.tab-nav,.tab-nav2 {display: flex;  width: 100%; overflow: hidden; background: #c29969; border-radius: 20px 20px 0 0;}
 .skill>.tab-nav .active, .tab-nav2 .active {background: #fff;}
 .tab-nav li, .tab-nav2 li{ padding: 10px; cursor: pointer; }
 .skill>.tab-nav li img, .tab-nav2 li img{width: 35px;}
@@ -157,20 +162,25 @@ border: 1px solid #fff; border-radius: 100%; box-sizing: border-box;
 
 /***** contents ******/
 /* content */
-#contents {width: 100%; height: 600vh; display: block;}
+#contents {width: 100%; height: 700vh; display: block;}
 .package {width: 100%; height: 100vh; position: relative; overflow: hidden;}
 .con {position: relative; z-index: 100;display: flex; justify-content: center; align-items: center; margin: 0 auto; width: 100%; height: 100vh; padding-top: 100px; }
 .con-inner {display: flex; justify-content: center; align-items: center; width: 100%; height: 750px; font-family: 'GmarketSans';margin: 0 auto; color: #000;}
 .con-inner.right {display: flex; flex-direction: row-reverse;}
-.package>.big1,.big2,.big3, .big4, .big5, .big6 { position: absolute; top: 0%; left: 0%;width: 0; height: 100vh;z-index: 99;transition: 1s ease-in-out;}
+.package> .big0,.big1,.big2,.big3, .big4, .big5, .big6 { position: absolute; top: 0%; left: 0%;width: 0; height: 100vh;z-index: 99;transition: 1s ease-in-out;}
+
 /* .package> { position: absolute; top: 0%; right: 0%;width: 0; height: 100vh;z-index: 99;transition: 1s ease-in-out;} */
+
+/* 패키지 bg */
+/* .package .big0 {background: url(../img/intbridge.png)no-repeat center/cover fixed; opacity: 0.5;}
 .package .big1 {background: url(../img/okvalle-bg-lite.png)no-repeat center/cover fixed;}
 .package .big2 {background: url(../img/center-bg.png)no-repeat center/cover fixed;}
 .package .big3 {background: url(../img/giodano-bg.png)no-repeat center/cover fixed;}
 .package .big4 {background: url(../img/ohkitchen-bg-lite.png)no-repeat center/cover fixed;}
 .package .big5 {background: url(../img/sulwhsoo-bg.jpg)no-repeat center/cover fixed;}
 .package .big6 {background: url(../img/richmond-bg-lite.png)no-repeat center/cover fixed;}
-.package .on {width: 100%;}
+.package .on {width: 100%;} */
+
 /* content 목업 */
 .con-img {width: 900px; height: 100%; overflow: hidden;position: relative; background: url(../img/iMac-2012-big.png)no-repeat center; background-size: 80%;}
 

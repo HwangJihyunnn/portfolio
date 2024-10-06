@@ -1,6 +1,6 @@
-$(function(){
+/* $(function(){
   alert('본 화면은 1920px에 최적화 되어있습니다.')
-})
+}) */
 
 // main - 메인 텍스트 입력
 $(function(){
@@ -46,7 +46,7 @@ $(function () {
 
 
 // contents - 홈페이지 bg
-$(function(){
+/* $(function(){
   const WIDTH = window.innerWidth;
   const HEIGHT = window.innerHeight;
 
@@ -54,10 +54,11 @@ $(function(){
     // console.log(this.window.scrollY);
     // console.log(WIDTH);
     // console.log(HEIGHT);
+    const size = $("#contents > .package").length;
 
-    for (let i = 1; i <= 6; i++) {
-      const target = `.package>.big${i}`;
-      if ((i + 1) * HEIGHT === this.window.scrollY) {
+    for (let i = 1; i <= size; i++) {
+      const target = `.package>.big${i - 1}`;
+      if ((i) * HEIGHT < this.window.scrollY && this.window.scrollY <= (i + 1) * HEIGHT) {
         $(target).addClass("on");
       } else {
         $(target).removeClass("on");
@@ -65,7 +66,7 @@ $(function(){
     }
   })
 })
-
+ */
 
 // profile - 스킬 탭메뉴
 $(function(){
@@ -109,7 +110,7 @@ $(function(){
 
 
 // 스크롤 이벤트
-$(function(){
+/* $(function(){
   window.addEventListener("wheel", function(e){
     e.preventDefault();
 },{passive : false});
@@ -120,7 +121,7 @@ $(function(){
     $(window).on("wheel", function(e) {
         if(mHtml.is(":animated")) return;
         if(e.originalEvent.deltaY > 0) {
-            if(page == 10) return;
+            if(page == 11) return;
             page++;
         } else if(e.originalEvent.deltaY < 0) {
             if(page == 1) return;
@@ -138,4 +139,4 @@ $(function(){
             }
         })
     }
-})
+}) */
